@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,400;0,800;1,200;1,800 & display=swap');
+
+*{
+    padding: 100;
+    margin: 100;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body { background-color: blue; }
+
+@media (max-width: 600px) {
+body { background-color: rgb(207, 196, 36); }
+}
+
+@media (min-width: 1000px) {
+body { background-color:rgb(108, 142, 255); }
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title{
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(47, 80, 189);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+#s5 {
+    background-color: rgb(31, 29, 29);
+    padding: 40px;
+    border-radius: 10px 60px;
+  }
+
+/*Seção de apresentação*/
+
+.destaque::first-line {
+    font-size: 30px;
+    background-color: rgb(243, 173, 43);
+}
+#s4 {
+    margin: 2;
+    float: left;
+    background-color: #0bf0dd;
+    padding: 20px;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px 60px;
+  }
+
+#presentation {
+    background-image: url(./Imagens/Painel\ de\ fundo.jpg);
+    background-size: cover;
+    background-position:top center;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px 20px;
+}
+
+#presentation h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+
+}
+
+#presentation h1:nth-child(1)v{
+    animation-delay: .8s;
+}
+
+#presentation h1:nth-child(2){
+    animation-delay: 1.8s;
+}
+
+#presentation h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 2.8s;
+
+}
+
+#presentation .cta{
+    display: inline-block;
+    position: center;
+    padding: 10px 30px;
+    color: rgb(80, 98, 138);
+    background-color: transparent;
+    border: 2px solid rgb(36, 41, 110);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+#presentation .cta:hover{
+    color: white;
+    font-weight:800;
+    background-color: rgb(72, 95, 194);
+}
+
+#presentation h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: rgb(70, 124, 168);
+
+}
+
+#presentation h1:nth-child(1)v{
+    animation-delay: .8s;
+}
+
+
+#presentation:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+/*Seção de Portifolio*/
+
+#portifolio .portifolio{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#portifolio .portifolio-header{
+    margin-bottom: 50px;
+}
+
+#portifolio .all-project {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#portifolio .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px 10px;
+}
+
+#portifolio .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, rgb(15, 15, 15) 0%, rgb(68, 68, 61) 100%);
+    color: rgb(77, 77, 233);
+    border-radius: 20px 50px;
+}
+
+#portifolio .project-info h1{
+    font-size: 4rem;
+    font-weight: 800px;
+
+}
+
+#portifolio .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 800px;
+    margin-top: 10px;
+
+}
+
+#portifolio .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#portifolio .project-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.5;
+    border-radius: 20px 50px;
+}
+
+#portifolio .project-img img{
+    transition: 0.5s ease transform;
+    border-radius: 20px 50px;
+}
+
+#portifolio .project-item:hover .project-img{
+    transform: scale(1.1);
+    
+}
+
+
+/* keyframes*/
+@keyframes text_reveal{
+    100%{
+        color: rgb(59, 39, 172);
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{
+        color:rgb(72, 115, 255);
+        font-weight: 800px;
+    }
+}
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+/*Midia Quary*/
+
+@media only screen and (min-width: 768px){
+    #portifolio ,project-item{
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 20px 50px;
+    }
+    #portifolio .all-project .project-img{
+        height: 100%;
+    }
+    #portifolio .project-item:nth-child(even){
+        flex-direction: row-reverse;
+        
+    }
+}
+
+/*roda pé dados de contato*/
+   
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+   #image-container-1 {
+    text-align: center;
+    width: 100%;
+   }
+  
+   .links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   }
+  
+
