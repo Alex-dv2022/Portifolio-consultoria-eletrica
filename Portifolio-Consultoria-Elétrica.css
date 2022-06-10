@@ -59,8 +59,10 @@ p{
 }
 #s5 {
     background-color: rgb(31, 29, 29);
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px 60px;
+    width: 450px;
+    margin-inline: auto;
   }
 
 /*Seção de apresentação*/
@@ -295,26 +297,30 @@ p{
 }
 
 /*roda pé dados de contato*/
-   
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-  
-   #image-container-1 {
-    text-align: center;
-    width: 100%;
-   }
-  
-   .links-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-   }
+body {
+    font-family: 'Syne', sans-serif; 
+        }
+    
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    .image-container {
+      text-align: center;
+      width: 100%;
+    }
+    
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+    
   
 
