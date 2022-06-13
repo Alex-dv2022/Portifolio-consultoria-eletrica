@@ -144,7 +144,7 @@ p{
     width: 0;
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
-    background-color: rgb(70, 124, 168);
+    background-color: gold;
 
 }
 
@@ -256,7 +256,7 @@ p{
 /* keyframes*/
 @keyframes text_reveal{
     100%{
-        color: rgb(59, 39, 172);
+        color: rgb(184, 163, 45);
     }
 }
 
